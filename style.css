@@ -114,8 +114,8 @@ h2{
 
 h3{
   font-size: 1.4em;
-  color: #d82a74;
-  font-weight: 500;
+  color: #312f68;
+  font-weight: 400;
   text-align:center;
   margin-bottom: 0;
   }
@@ -256,7 +256,7 @@ p#copyright{
   top: 0;
   left: 0;
   background-color: #ebebeb;
-  transition: 0.5s; 
+  transition: 0.5s;
   visibility: hidden;
 }
 
