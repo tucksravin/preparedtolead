@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Website Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+
+    <link rel="icon"
+      type="image/png"
+      href="images/cwalker_favicon.png">
+
+
+    <title>Prepared to Lead</title>
+  </head>
+
+  <body>
+    <div id="main">
+<!-- header: "Prepared to Lead" and hamburgermenu-->
+    <header>
+      <img id='hamburgermenu' src='images/hamburgermenu.png' onclick="openNav()"/>
+      <h1>Prepared to Lead</h1>
+    </header>
+
+
+
+    <!-- adds pyramids to background of content-->
+
+    <div id="pyramids">
+      <div id="pagetitle">
+      <h2> Coaching to Develop Successful </h2>
+        <h2> Leaders and Managers</h2>
+      <h2> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; ... Right from the Start</h2>
+      <img id="logo" src="images/logo_trans.png" alt="Prepared to Lead Logo"/>
+    </div>
+      <!-- <div class='contentbox'>
+        <p class='content'>
+          Chances are, you are doing both.  To varying degrees on different days.  We often talk about leadership and management as if they are different roles.  And while they do entail different competencies, they are more often than not blended together in most job descriptions.  Very few people have roles that are either pure leadership or pure management.
+        </p>
+      <p class='content'>
+          Peter Drucker famously said that “Management is doing things right; leadership is doing the right things.”  Put this way, it’s easy to see how one has to do both to be successful in just about any role.  Lisa Su, CEO of Advanced Micro Devices, had to determine what the company’s direction would be when she assumed the role in 2014.  What products should they build to serve which customers to turn the company’s performance around?  Clearly, this is leadership—identifying the right things to do.  But no matter how many senior lieutenants she had, she also had to manage the process—to get things done right.  She had to get the right people into the right jobs (perhaps a manager’s most important responsibility!).  She had to communicate difficult messages inside and outside the company.  She had to measure progress and initiate course corrections.  In short, she had to be a manager as well as a leader.
+        </p>
+        <p class='content'>
+          The same principles apply to less high-flying positions.  The typical sales manager must have a vision for how to sell her product most effectively.  She then needs to make assignments, develop her staff’s skills, and monitor progress.  A customer service manager must establish what the core values will be for the team.  He then needs to guide his team to execute on those values.
+        </p>
+        <p class='content'>
+          Any given role probably has more of an emphasis on either managing or leading.  But we are all doing both.  So yes, you need to keep developing both sets of skills!
+        </p>
+
+
+      </div> -->
+
+      <div class="row">
+        <div class="column contentbox">
+            <div class="boxheader">Latest Thoughts</div>
+            <div class="link" href="#">Am I Leading or Managing?</div>
+            </div>
+
+        <div class="column contentbox">
+            <div class="link" id="mlist" href="#">Sign up for my mailing list!</div>
+        </div>
+        <div class="column contentbox">
+
+            <div class="boxheader">In the Press</div>
+
+            <div class="link" href="#">the Harvard Business Review</div>
+
+        </div>
+      </div>
+<!--forces space between the last bit of content and the footer-->
+      <div class="spacer">
+      </div>
+
+    </div>
+
+    <footer>
+
+      <a href="homepage.html" id="home">Home</a>
+      <p id='copyright'>&copy; Carol A. Walker 2019</p>
+
+
+    </footer>
+  </div>
+
+  <!-- Side Navigation-->
+
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Why Coaching?</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">In the Press</a>
+  <a href="#">Thoughts</a>
+  <a href="#">FAQ</a>
+  <a href="#">Contact</a>
+  </div>
+
+
+  </body>
+
+  <script>
+
+  /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+  if (window.innerWidth<768) {
+    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("main").style.marginLeft = "100%";
+  }
+
+  else {
+    document.getElementById("mySidenav").style.width = "14em";
+    document.getElementById("main").style.marginLeft = "14em";
+  }
+
+  document.getElementById("mySidenav").style.visibility = "visible";
+
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.visibility = "hidden";
+  document.getElementById("main").style.marginLeft = "0";
+}
+
+</script>
+</html>

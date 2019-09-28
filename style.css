@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+/* Prepeared to Lead global CSS stylesheet */
+/*
+  Color codes
+  dark background: #312f68
+  title, content, and art: #938faf
+  highlight: #d82a74
+  footer and forms: #ebebeeb*/
+
+
+/*Designing desktop first*/
+
+html{
+  position:relative;
+}
+
+body{
+  margin:0;
+  background-color: #312f68;
+  font-size: 18px;
+}
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (max-width: 992px) {
+    body{
+      font-size: 16px;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (max-width: 768px) {
+    body{
+      font-size: 14px;
+    }
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (max-width: 600px) {
+    body{
+      font-size: 12px;
+    }
+    h2{
+      font-size: 10px;
+    }
+  }
+
+  /*phones in portrait*/
+  @media only screen and (max-width: 320px) {
+    body{
+      font-size: 11px;
+    }
+
+    h2{
+      font-size: 8px;
+    }
+  }
+
+#main{
+  padding:0;
+}
+
+header{
+  display: inline;
+  margin-bottom: .4em;
+  margin-top: .4em;
+}
+
+
+
+#hamburgermenu{
+  height:2.5em;
+  vertical-align: middle;
+  position: absolute;
+  left: 8px;
+
+}
+
+#hamburgermenu:hover{
+  cursor: pointer;
+  filter:brightness(.8);
+}
+
+h1, h2, p, a{
+  font-family:'Adobe Garamond Pro', serif;
+}
+
+#pyramids{
+  background-image: url("images/backgroundpyramid.png");
+  background-position: right top;
+  background-repeat: repeat-y;
+  background-origin: content-box;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: 0px;
+}
+
+
+   h1{
+
+  font-size: 2.5em;
+  font-weight: 400;
+
+  color: #d82a74;
+  margin-top: 0px;
+  text-align: center;
+  margin-bottom: 0px;
+
+     }
+
+
+
+h2{
+  font-weight: 400;
+  font-size: 2.5em;
+  color: #312f68;
+}
+
+#pagetitle{
+  text-align: center;
+  margin:auto;
+  margin-top: 0.2em;
+  background-color: #ebebeb;
+  width: 90%;
+  margin-bottom: 1.2em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+#logo{
+  height: 9em;
+  float:right;
+  margin-top: -5em;
+}
+
+.contentbox{
+  font-size: 1.2em;
+  background-color: #938faf;
+  color: #312f68;
+  width: 90%;
+  margin: auto;
+  padding-top: .4em;
+  padding-bottom: .4em;
+  margin-bottom: 1.2em;
+}
+
+p.content{
+  padding: 3%;
+  padding-bottom:0;
+  padding-top: 1%;
+}
+
+.row {
+  margin:auto;
+  display: flex;
+  width: 93%;
+}
+
+
+.column {
+  height: 9em;
+  font-size: 1.5em;
+  margin-left: 1em;
+  margin-right: 1em
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    display: block;
+    width:50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    width:70%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .row {
+    width:100%;
+  }
+}
+
+
+.boxheader{
+  margin:1em;
+}
+
+.link{
+  font-size:1em;
+  color: #d82a74;
+  text-decoration: underline;
+  margin-left: 1em;
+}
+
+.link:hover{
+  color: #d76998;
+}
+
+#mlist{
+  margin-top: 3em;
+}
+
+
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 2.6em;
+    background: #ebebeb;
+    margin-top: auto;
+    align-items: center;
+}
+
+.spacer{
+  height: 5em;
+  background-color: transparent;
+
+}
+
+
+a{
+  color: #938faf;
+  font-size: 1.5em;
+  text-decoration: none;
+  width:100%;
+  text-align: center;
+}
+
+ a:hover{
+  color:#312f68;
+}
+
+p#copyright{
+  position:absolute;
+  right:3px;
+  color: #938faf;
+  margin: auto;
+}
+  /*Side Nav*/
+
+  /* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #ebebeb;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  visibility: hidden;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: .5em .5em .5em 1.8em;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #312f68;
+  display: flex;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #938faf;
+}
+
+#closebtn{
+  font-size: 3em;
+  padding-left: 3.6em;
+  padding-top: 0;
+}
+
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+
+}
