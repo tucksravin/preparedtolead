@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Website Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+
+    <link rel="icon"
+      type="image/png"
+      href="images/cwalker_favicon.png">
+
+
+    <title>Prepared to Lead</title>
+  </head>
+
+  <body>
+    <div id="main">
+<!-- header: "Prepared to Lead" and hamburgermenu-->
+    <header>
+      <img id='hamburgermenu' src='images/hamburgermenu.png' onclick="openNav()"/>
+      <h1>Prepared to Lead</h1>
+    </header>
+
+
+
+    <!-- adds pyramids to background of content-->
+
+    <div id="pyramids">
+      <div id="pagetitle">
+      <h2> Why Coaching? </h2>
+      <img id="logo" src="images/logo_trans.png" alt="Prepared to Lead Logo"/>
+    </div>
+      <div class='contentbox'>
+        <p class="content">
+          Carol A. Walker created Prepared to Lead to help organizations maximize the effectiveness of first-time managers.
+        </p>
+        <p class="content">
+          Prior to founding Prepared to Lead in 2000, Carol spent 13 years in the Northeast Regional office of the Chubb Corporation, where she managed global property and casualty underwriting operations. Later, she served as a Senior Vice President of Operations for CCBN, an innovator of internet-based communications for corporate investor relations.
+        </p>
+        <p class="content">
+          While she thoroughly enjoyed being a leader and manager, these experiences revealed her true calling. Her love for developing and supporting young leaders in both of these organizations led her to found Prepared to Lead.
+        </p>
+        <p class="content">
+          Ms. Walker holds an MBA from the Simmons Graduate School of Management and a B.A. in Sociology from Dartmouth College.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="column contentbox">
+            <div class="boxheader">Latest Thoughts</div>
+            <div class="link" href="#">Am I Leading or Managing?</div>
+            </div>
+
+        <div class="column contentbox">
+            <div class="link" id="mlist" href="#">Sign up for my mailing list!</div>
+        </div>
+        <div class="column contentbox">
+
+            <div class="boxheader">In the Press</div>
+
+            <div class="link" href="#">the Harvard Business Review</div>
+
+        </div>
+      </div>
+<!--forces space between the last bit of content and the footer-->
+      <div class="spacer">
+      </div>
+
+    </div>
+
+    <footer>
+
+      <a href="index.html" id="home">Home</a>
+      <p id='copyright'>&copy; Carol A. Walker 2019</p>
+
+
+    </footer>
+  </div>
+
+  <!-- Side Navigation-->
+
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+  <a href="whycoaching.html">Why Coaching?</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="inthepress.html">In the Press</a>
+  <a href="thoughts.html">Thoughts</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact</a>
+  </div>
+
+
+  </body>
+
+  <script>
+
+function openNav() {
+  if (window.innerWidth<768) {
+    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("main").style.marginLeft = "100%";
+  }
+
+  else {
+    document.getElementById("mySidenav").style.width = "14em";
+    document.getElementById("main").style.marginLeft = "14em";
+  }
+
+  document.getElementById("mySidenav").style.visibility = "visible";
+
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.visibility = "hidden";
+  document.getElementById("main").style.marginLeft = "0";
+}
+
+</script>
+</html>
