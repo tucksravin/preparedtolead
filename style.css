@@ -170,16 +170,22 @@ p.content{
   margin-right: 1em
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 978px) {
   .row {
     display: block;
+    width:45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .row {
     width:50%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .row {
-    width:70%;
+    width:60%;
   }
 }
 
@@ -262,20 +268,7 @@ p#copyright{
 
 }
 
-@media only screen and (max-width: 600px){
 
-  .sidenav
-  {
-    width: 14em;
-  }
-
-  .sidenav#closebtn
-  {
-    visibility: hidden;
-  }
-  }
-
-  }
 
 /* The navigation menu links */
 .sidenav a {
@@ -295,6 +288,19 @@ p#copyright{
   font-size: 3em;
   padding-left: 3.6em;
   padding-top: 0;
+}
+
+/*Keep the side nav present all the time for bigger screens*/
+@media only screen and (min-width: 600px){
+
+.sidenav{
+  width: 14em;
+  visibility: visible;
+}
+
+#closebtn{   visibility: hidden;  }
+
+#main{ margin-left: 14em;  }
 }
 
 
