@@ -90,25 +90,20 @@
 
   /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 function openNav() {
-  if (window.innerWidth<768) {
+
     document.getElementById("mySidenav").style.width = "100%";
     document.getElementById("main").style.marginLeft = "100%";
-  }
-
-  else {
-    document.getElementById("mySidenav").style.width = "14em";
-    document.getElementById("main").style.marginLeft = "14em";
-  }
-
-  document.getElementById("mySidenav").style.visibility = "visible";
+    document.getElementById("mySidenav").style.visibility = "visible";
 
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("mySidenav").style.visibility = "hidden";
-  document.getElementById("main").style.marginLeft = "0";
+  if (window.innerWidth>600)
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("mySidenav").style.visibility = "hidden";
+    document.getElementById("main").style.marginLeft = "0";
+  }
 }
 
 </script>
