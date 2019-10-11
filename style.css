@@ -286,8 +286,8 @@ p#copyright{
 
 #closebtn{
   font-size: 3em;
-  padding-left: 3.6em;
   padding-top: 0;
+  padding-left: 1em;
 }
 
 /*Keep the side nav present all the time for bigger screens*/
