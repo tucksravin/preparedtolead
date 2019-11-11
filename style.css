@@ -243,6 +243,13 @@ footer{
  margin-left: 1.2em;
 }
 
+#navLogo{
+
+  position: absolute;
+  right: 12px;
+  height: 16em;
+}
+
 
 a{
   color: #938faf;
