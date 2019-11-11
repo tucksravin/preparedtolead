@@ -232,6 +232,17 @@ footer{
 
 }
 
+.navItem{
+
+}
+
+.bulletPoint{
+  float:left;
+ height: .66em;
+ margin-top: -2.1em;
+ margin-left: 1.2em;
+}
+
 
 a{
   color: #938faf;
@@ -239,6 +250,7 @@ a{
   text-decoration: none;
   width:100%;
   text-align: center;
+
 }
 
  a:hover{
