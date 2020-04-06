@@ -1,115 +1,142 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Website Stylesheet-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Favicon -->
 
-    <link rel="icon"
-      type="image/png"
-      href="images/cwalker_favicon.png">
-
+    <link rel="icon" type="image/png" href="images/cwalker_favicon.png" />
 
     <title>Prepared to Lead</title>
   </head>
 
   <body>
     <div id="main">
-<!-- header: "Prepared to Lead" and hamburgermenu-->
-    <header>
-      <img id='hamburgermenu' src='images/hamburgermenu.png' onclick="openNav()"/>
-      <h1>Prepared to Lead</h1>
-    </header>
+      <!-- header: "Prepared to Lead" and hamburgermenu-->
+      <header>
+        <img
+          id="hamburgermenu"
+          src="images/hamburgermenu.png"
+          onclick="openNav()"
+        />
+        <h1>Prepared to Lead</h1>
+      </header>
 
+      <!-- adds pyramids to background of content-->
 
+      <div id="pyramids">
+        <div id="pagetitle">
+          <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Services</h2>
+          <img
+            id="logo"
+            src="images/logo_trans.png"
+            alt="Prepared to Lead Logo"
+          />
+        </div>
+        <div class="contentbox">
+          <h3>
+            Individual Coaching
+          </h3>
+          <p class="content">
+            Ms. Walker specializes in customized one-on-one coaching, focusing
+            on objectives established mutually between the individual and the
+            employer. Her coaching programs prepare newly promoted leaders to
+            enhance their skills in areas such as:
+          </p>
 
-    <!-- adds pyramids to background of content-->
+          <ul>
+            <li>Leadership presence</li>
+            <li>Strategic thinking and goal setting</li>
+            <li>Communication</li>
+            <li>Supervising</li>
+            <li>Delegation</li>
+            <li>Hiring</li>
+          </ul>
 
-    <div id="pyramids">
-      <div id="pagetitle">
-      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Services </h2>
-      <img id="logo" src="images/logo_trans.png" alt="Prepared to Lead Logo"/>
-    </div>
-      <div class='contentbox'>
-        <h3>
-          Individual Coaching
-        </h3>
-        <p class="content">
-          Ms. Walker specializes in customized one-on-one coaching, focusing on objectives established mutually between the individual and the employer. Her coaching programs prepare newly promoted leaders to enhance their skills in areas such as:
+          <p class="content">
+            Ms. Walker has worked extensively with clients in a wide array of
+            industries, including financial services, biotechnology,
+            engineering, consulting, and information technology.
+          </p>
 
-        <ul>
-          <li>Leadership presence</li>
-          <li>Strategic thinking and goal setting</li>
-          <li>Communication</li>
-          <li>Supervising</li>
-          <li>Delegation</li>
-          <li>Hiring</li>
-        </ul>
-        </p>
-        <p class="content">
-          Ms. Walker has worked extensively with clients in a wide array of industries, including financial services, biotechnology, engineering, consulting, and information technology.
-        </p>
+          <h3>Group Training</h3>
+          <p class="content">
+            Ms. Walker also designs and delivers customized group training
+            programs aimed at improving management and leadership skills. Past
+            programs have included Managing People, Developing Leadership
+            Presence, Conflict Management and Talent Selection. All of her
+            programs are customized to meet the specific needs of her clients.
+          </p>
+        </div>
 
-        <h3>Group Training</h3>
-        <p class="content">
-          Ms. Walker also designs and delivers customized group training programs aimed at improving management and leadership skills. Past programs have included Managing People, Developing Leadership Presence, Conflict Management and Talent Selection. All of her programs are customized to meet the specific needs of her clients.
-        </p>
-
+        <!--forces space between the last bit of content and the footer-->
+        <div class="spacer"></div>
       </div>
 
-
-<!--forces space between the last bit of content and the footer-->
-      <div class="spacer">
-      </div>
-
+      <footer>
+        <a href="index.html" id="home">Home</a>
+        <p id="copyright">&copy; Carol A. Walker 2019</p>
+      </footer>
     </div>
 
-    <footer>
+    <!-- Side Navigation-->
 
-      <a href="index.html" id="home">Home</a>
-      <p id='copyright'>&copy; Carol A. Walker 2019</p>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" id="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
 
+      <img
+        id="navLogo"
+        src="images/logo_trans.png"
+        alt="Prepared to Lead Logo"
+      />
 
-    </footer>
-  </div>
+      <a href="index.html">Home</a>
+      <img class="bulletPoint" src="images/cwalker_favicon.png" alt="bPoint" />
 
-  <!-- Side Navigation-->
+      <a href="whycoaching.html">Why Coaching?</a>
+      <img class="bulletPoint" src="images/cwalker_favicon.png" alt="bPoint" />
 
-  <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">Home</a>
-  <a href="whycoaching.html">Why Coaching?</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="inthepress.html">In the Press</a>
-  <a href="thoughts.html">Thoughts</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contact.html">Contact</a>
-  </div>
+      <a href="about.html">About</a>
+      <img class="bulletPoint" src="images/cwalker_favicon.png" alt="bPoint" />
 
+      <a href="services.html">Services</a>
+      <img class="bulletPoint" src="images/cwalker_favicon.png" alt="bPoint" />
 
+      <a href="inthepress.html">In the Press</a>
+      <img class="bulletPoint" src="images/cwalker_favicon.png" alt="bPoint" />
+
+      <a href="thoughts.html">Thoughts</a>
+      <img class="bulletPoint" src="images/cwalker_favicon.png" alt="bPoint" />
+
+      <a href="faq.html">FAQ</a>
+      <img class="bulletPoint" src="images/cwalker_favicon.png" alt="bPoint" />
+
+      <a href="contact.html">Contact</a>
+      <img class="bulletPoint" src="images/cwalker_favicon.png" alt="bPoint" />
+    </div>
   </body>
 
   <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+      document.getElementById("main").style.marginLeft = "100%";
+      document.getElementById("mySidenav").style.visibility = "visible";
+    }
 
-function openNav() {
-
-    document.getElementById("mySidenav").style.width = "100%";
-    document.getElementById("main").style.marginLeft = "100%";
-    document.getElementById("mySidenav").style.visibility = "visible";
-
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("mySidenav").style.visibility = "hidden";
-  document.getElementById("main").style.marginLeft = "0";
-}
-
-</script>
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("mySidenav").style.visibility = "hidden";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
 </html>

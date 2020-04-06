@@ -1,116 +1,164 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Website Stylesheet-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Favicon -->
 
-    <link rel="icon"
-      type="image/png"
-      href="images/cwalker_favicon.png">
-
+    <link rel="icon" type="image/png" href="images/cwalker_favicon.png" />
 
     <title>Prepared to Lead</title>
   </head>
 
   <body>
     <div id="main">
-<!-- header: "Prepared to Lead" and hamburgermenu-->
-    <header>
-      <img id='hamburgermenu' src='images/hamburgermenu.png' onclick="openNav()"/>
-      <h1>Prepared to Lead</h1>
-    </header>
+      <!-- header: "Prepared to Lead" and hamburgermenu-->
+      <header>
+        <img
+          id="hamburgermenu"
+          src="images/hamburgermenu.png"
+          onclick="openNav()"
+        />
+        <h1>Prepared to Lead</h1>
+      </header>
 
+      <!-- adds pyramids to background of content-->
 
+      <div id="pyramids">
+        <div id="pagetitle">
+          <h2>Frequently Asked Questions</h2>
+          <img
+            id="logo"
+            src="images/logo_trans.png"
+            alt="Prepared to Lead Logo"
+          />
+        </div>
+        <div class="contentbox">
+          <h3>
+            Do I need to involve my employer/boss in my coaching?
+          </h3>
+          <p class="content">
+            You don’t have to do anything except commit to being a stronger
+            leader. There are strong reasons, however, to include your manager
+            in the process. In addition to the feedback and support they can
+            offer, it can be a great way to demonstrate your initiative and
+            openness to growth. Too often we expect people to just notice how
+            much we’ve improved. It’s generally far more effective to engage
+            them as an active observer of the process.
+          </p>
+          <h3>
+            What will we discuss in our sessions and will they be confidential?
+          </h3>
+          <p class="content">
+            The goal of our sessions is to uncover areas where you can improve
+            the impact you are having. To do that, we discuss real situations,
+            negotiations, presentations, discussions etc. that have happened or
+            need to happen soon. We work together to take a more thoughtful,
+            strategic approach to your encounters. All of our discussions are
+            completely confidential. If your employer is sponsoring your
+            coaching, we will work together to ensure they are kept informed
+            while respecting the confidentiality of our sessions.
+          </p>
+          <h3>
+            As an HR manager I have a limited budget. Can coaching for new
+            managers be affordable enough to offer it to all of my team?
+          </h3>
+          <p class="content">
+            Prepared to Lead was formed to encourage all organizations to invest
+            in their new leaders so that productive habits are formed early.
+            Simple, finite-termed coaching programs are encouraged so that you
+            can feel comfortable providing ‘executive coaching’ to your
+            first-time managers.
+          </p>
+          <h3>
+            How do I determine which of my staff could benefit from coaching?
+          </h3>
+          <p class="content">
+            Chances are, you already know. You’re just assuming if you give them
+            long enough they will grow into the job. Coaching is for your
+            critical team members. The ones who drive your productivity, are
+            eager to learn and to have real impact. If you see these types
+            struggling a bit to deliver clear messages, delegate effectively,
+            develop others, influence across departments, you might want to
+            consider coaching. Not to correct a flaw, but to remove barriers to
+            success.
+          </p>
+        </div>
 
-    <!-- adds pyramids to background of content-->
-
-    <div id="pyramids">
-      <div id="pagetitle">
-      <h2> Frequently Asked Questions </h2>
-      <img id="logo" src="images/logo_trans.png" alt="Prepared to Lead Logo"/>
-    </div>
-      <div class='contentbox'>
-        <h3>
-          Do I need to involve my employer/boss in my coaching?
-        </h3>
-        <p class="content">
-          You don’t have to do anything except commit to being a stronger leader. There are strong reasons, however, to include your manager in the process. In addition to the feedback and support they can offer, it can be a great way to demonstrate your initiative and openness to growth. Too often we expect people to just notice how much we’ve improved. It’s generally far more effective to engage them as an active observer of the process.
-        </p>
-        <h3>What will we discuss in our sessions and will they be confidential?</h3>
-        <p class="content">
-          The goal of our sessions is to uncover areas where you can improve the impact you are having. To do that, we discuss real situations, negotiations, presentations, discussions etc. that have happened or need to happen soon. We work together to take a more thoughtful, strategic approach to your encounters. All of our discussions are completely confidential. If your employer is sponsoring your coaching, we will work together to ensure they are kept informed while respecting the confidentiality of our sessions.
-        </p>
-        <h3>As an HR manager I have a limited budget. Can coaching for new managers be affordable enough to offer it to all of my team?</h3>
-        <p class="content">
-          Prepared to Lead was formed to encourage all organizations to invest in their new leaders so that productive habits are formed early. Simple, finite-termed coaching programs are encouraged so that you can feel comfortable providing ‘executive coaching’ to your first-time managers.
-        </p>
-        <h3>How do I determine which of my staff could benefit from coaching?</h3>
-        <p class="content">
-          Chances are, you already know. You’re just assuming if you give them long enough they will grow into the job. Coaching is for your critical team members. The ones who drive your productivity, are eager to learn and to have real impact. If you see these types struggling a bit to deliver clear messages, delegate effectively, develop others, influence across departments, you might want to consider coaching. Not to correct a flaw, but to remove barriers to success.
-        </p>
+        <!--forces space between the last bit of content and the footer-->
+        <div class="spacer"></div>
       </div>
 
-
-<!--forces space between the last bit of content and the footer-->
-      <div class="spacer">
-      </div>
-
+      <footer>
+        <a href="index.html" id="home">Home</a>
+        <p id="copyright">&copy; Carol A. Walker 2019</p>
+      </footer>
     </div>
 
-    <footer>
+    <!-- Side Navigation-->
 
-      <a href="index.html" id="home">Home</a>
-      <p id='copyright'>&copy; Carol A. Walker 2019</p>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" id="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
 
+      <img
+        id="navLogo"
+        src="images/logo_trans.png"
+        alt="Prepared to Lead Logo"
+      />
 
-    </footer>
-  </div>
+      <a href="index.html">Home</a>
+      <img class="bulletPoint" src="images/cwalker_favicon.png" alt="bPoint" />
 
-  <!-- Side Navigation-->
+      <a href="whycoaching.html">Why Coaching?</a>
+      <img class="bulletPoint" src="images/cwalker_favicon.png" alt="bPoint" />
 
-  <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">Home</a>
-  <a href="whycoaching.html">Why Coaching?</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="inthepress.html">In the Press</a>
-  <a href="thoughts.html">Thoughts</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contact.html">Contact</a>
-  </div>
+      <a href="about.html">About</a>
+      <img class="bulletPoint" src="images/cwalker_favicon.png" alt="bPoint" />
 
+      <a href="services.html">Services</a>
+      <img class="bulletPoint" src="images/cwalker_favicon.png" alt="bPoint" />
 
+      <a href="inthepress.html">In the Press</a>
+      <img class="bulletPoint" src="images/cwalker_favicon.png" alt="bPoint" />
+
+      <a href="thoughts.html">Thoughts</a>
+      <img class="bulletPoint" src="images/cwalker_favicon.png" alt="bPoint" />
+
+      <a href="faq.html">FAQ</a>
+      <img class="bulletPoint" src="images/cwalker_favicon.png" alt="bPoint" />
+
+      <a href="contact.html">Contact</a>
+      <img class="bulletPoint" src="images/cwalker_favicon.png" alt="bPoint" />
+    </div>
   </body>
 
   <script>
+    function openNav() {
+      if (window.innerWidth < 768) {
+        document.getElementById("mySidenav").style.width = "100%";
+        document.getElementById("main").style.marginLeft = "100%";
+      } else {
+        document.getElementById("mySidenav").style.width = "14em";
+        document.getElementById("main").style.marginLeft = "14em";
+      }
 
-function openNav() {
-  if (window.innerWidth<768) {
-    document.getElementById("mySidenav").style.width = "100%";
-    document.getElementById("main").style.marginLeft = "100%";
-  }
+      document.getElementById("mySidenav").style.visibility = "visible";
+    }
 
-  else {
-    document.getElementById("mySidenav").style.width = "14em";
-    document.getElementById("main").style.marginLeft = "14em";
-  }
-
-  document.getElementById("mySidenav").style.visibility = "visible";
-
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("mySidenav").style.visibility = "hidden";
-  document.getElementById("main").style.marginLeft = "0";
-}
-
-</script>
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("mySidenav").style.visibility = "hidden";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
 </html>
